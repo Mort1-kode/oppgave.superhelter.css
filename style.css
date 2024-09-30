@@ -1,0 +1,33 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 700px) {
+  ul {
+    flex-direction: column;
+  }
+}
+
+ul li {
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+ul li:nth-child(odd) {
+  color: grey;
+}
+
+li:hover {
+  border: 1px solid red;
+}
+
+li::before {
+  content: ">>";
+}
+
+ul li:focus {
+  background-color: green;
+}
